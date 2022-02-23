@@ -140,23 +140,31 @@ flex-wrap: wrap;
     font-size: 20px;
     text-align: center;
 }
-
 .carta {
     text-align: center;
     font-size: 25px;
     font-style: oblique;
     margin: 30px;
 }
-
 .carta__img {
     width: 400px;
     height: 300px;
 }
-
 .seccion {
     background: rgb(236, 188, 31);
 }
-
+.contenedor_especialidades{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img_especialidades{
+    margin:2rem ;
+    width: 50rem;
+    height: auto;
+    
+}
 form {
     display: flex;
     margin: 3rem;
