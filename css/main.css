@@ -14,7 +14,7 @@ body {
       grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
 }
 
-header {
+body header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -33,7 +33,7 @@ header {
           justify-content: space-between;
 }
 
-header .encabezado {
+body header .encabezado {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
@@ -52,12 +52,12 @@ header .encabezado {
           justify-content: space-between;
 }
 
-header .navbar {
+body header .navbar {
   width: 100%;
-  height: 8rem;
+  height: 10rem;
 }
 
-header .nav-item {
+body header .nav-item {
   font-size: 20px;
   list-style: none;
   margin: 1rem;
@@ -71,46 +71,70 @@ header .nav-item {
   padding-right: 1rem;
 }
 
-section {
+body header .nav-item:hover {
+  font-size: 2.5rem;
+  -webkit-text-decoration: rgbte(41, 41, 122);
+          text-decoration: rgbte(41, 41, 122);
+  text-decoration: underline;
+}
+
+body header .logo {
+  width: 20vw;
+  height: 20vw;
+}
+
+body header .logo:hover {
+  width: 25vw;
+  height: 25vw;
+}
+
+body .seccion {
+  background: #ecbc1f;
+}
+
+body .seccion h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 1rem;
+}
+
+body .seccion .collapse {
+  width: 60%;
+  background-color: white;
+}
+
+body .seccion .carta {
+  background-color: white;
+  margin: 10rem;
+}
+
+body section {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
   grid-area: main;
 }
 
-.logo {
-  width: 20vw;
-  height: 20vw;
-}
-
-.imagen {
+body section .imagen {
   width: 100%;
   height: 20rem;
 }
 
-.parrafo1 {
+body section .parrafo1 {
   margin: 2rem;
   text-align: center;
 }
 
-.parrafo1 h2 {
+body section .parrafo1 h2 {
   font-size: 40px;
+  text-align: center;
 }
 
-.parrafo1 p {
+body section .parrafo1 p {
   font-size: 20px;
 }
 
-.parrafo2 {
-  width: 400px;
-  height: 500px;
-  font-size: 20px;
-  line-height: 2.5em;
-  display: inline-block;
-  margin-left: 1rem;
-}
-
-.bloque {
+body section .bloque {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -126,7 +150,16 @@ section {
       flex-wrap: wrap;
 }
 
-.contenedor__plan {
+body section .bloque .parrafo2 {
+  width: 400px;
+  height: 500px;
+  font-size: 20px;
+  line-height: 2.5em;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+body section .bloque .contenedor__plan {
   width: 50%;
   height: 400px;
   display: -webkit-box;
@@ -141,72 +174,11 @@ section {
       align-content: space-around;
 }
 
-.plan {
+body section .bloque .contenedor__plan .plan {
   width: 12rem;
   height: 10rem;
   float: right;
   margin: 1rem;
-}
-
-.icono {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding-top: 21px;
-}
-
-.texto {
-  margin: 15px;
-  font-size: 20px;
-  text-align: center;
-}
-
-.carta {
-  text-align: center;
-  font-size: 25px;
-  font-style: oblique;
-  margin: 30px;
-}
-
-.carta__img {
-  width: 400px;
-  height: 300px;
-}
-
-.seccion {
-  background: #ecbc1f;
-}
-
-.contenedor_especialidades {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.img_especialidades {
-  margin: 2rem;
-  width: 50rem;
-  height: auto;
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 3rem;
-  line-height: 2em;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  font-size: 1rem;
 }
 
 footer {
@@ -235,6 +207,10 @@ footer {
 }
 
 footer .icono {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding-top: 21px;
   margin: 1rem;
 }
 
@@ -250,6 +226,56 @@ footer li a {
   margin: 1rem;
   text-decoration: none;
   color: white;
+}
+
+.texto {
+  margin: 15px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.carta {
+  text-align: center;
+  font-size: 25px;
+  font-style: oblique;
+  margin: 30px;
+}
+
+.carta__img {
+  width: 400px;
+  height: 300px;
+}
+
+.contenedor_especialidades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contenedor_especialidades .img_especialidades {
+  margin: 2rem;
+  width: 50rem;
+  height: auto;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem;
+  line-height: 2em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 820px) {
